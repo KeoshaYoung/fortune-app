@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get "/fortune_path", controller: "my_examples", action: "fortune_action"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "/lotto_path", controller: "my_examples", action: "lotto_action"
 
+  get "/counter_path", controller: "my_examples", action: "counter_action"
 end
